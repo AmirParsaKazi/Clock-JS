@@ -1,0 +1,203 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+body{   
+    background-image: linear-gradient(45deg, #322f3d, #4b5d67);
+}
+
+.AllCenter{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ClockBody{
+    width: 70vh;
+    height: 70vh;
+    border-radius: 50%;
+    border: 3vh solid #322f3d;
+    background-color: #4b5d67;
+    list-style-type: none;
+    position: relative;
+}
+
+#SecondCount{
+    width: 1vh;
+    height: 55vh;
+    position: absolute;
+    transform: rotate(0deg);
+    z-index: 302;
+    transition: all 0ms;
+}
+
+#MinuteCount{
+    width: 1.5vh;
+    height: 55vh;
+    position: absolute;
+    transform: rotate(0deg);
+    z-index: 301;
+    transition: all 0ms;
+}
+
+#HourCount{
+    width: 2vh;
+    height: 45vh;
+    position: absolute;
+    transform: rotate(0deg);
+    z-index: 300;
+    transition: all 0ms;
+}
+
+.CountBody{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+
+.CountBasic{
+    width: 100%;
+    height: 50%;
+}
+
+#SecondCount > .CountBody > .CountBasic{
+    background-color: #322f3d;
+}
+
+#MinuteCount > .CountBody > .CountBasic{
+    background-color: #59405c;
+}
+
+#HourCount > .CountBody > .CountBasic{
+    background-color: #87556f;
+}
+
+.CountAdditional{
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+}
+
+#AmPm{
+    position: absolute;
+    width: 10vh;
+    height: 5vh;
+    background-color: #322f3d;
+    font-size: 4vh;
+    right: 15vh;
+    bottom: 17vh;
+    color: #87556f;
+    border-radius: 3vh;
+}
+
+.CentralPoint{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    background-color:#322f3d;
+    z-index:999;
+}
+
+.num1{
+    position:absolute;
+    width: .7vh;
+    height: 7vh;
+    background-color:#322f3d;
+}
+
+/* .num2{
+    position:absolute;
+    width: 7vh;
+    height: .7vh;
+    background-color:#322f3d;
+} */
+
+#num12Left{
+    top: 5vh;
+    left: 35vh;
+}
+
+#num12Right{
+    top: 5vh;
+    left: 34vh;
+}
+
+#num6{
+    bottom: 5vh;
+    left: 34.5vh;
+}
+
+#num3{
+    right: 5vh;
+    transform: rotate(90deg);
+}
+
+#num9{
+    left: 5vh;
+    transform: rotate(90deg);
+}
+
+#Themes{
+    width: 10vh;
+    height: 5vh;
+    position: absolute;
+    top: 10vh;
+    right: 10vh;
+    background-color: #faf3e0;
+    color:#1e212d;
+    border: none;
+    font-weight: bold;
+    font-size: 3vh;
+    transition: all 1s;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.SetTime{
+    width: 40vh;
+    height: 10vh;
+    position: absolute;
+    left: 10vh;
+    bottom: 5vh;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-between;
+}
+
+.SeterTime{
+    width: 30%;
+    height: 100%;
+    background-color: #4b5d67;
+    color: #322f3d;
+    border:none;
+    outline:none;
+    font-size: 5vh;
+    text-align: center;
+    border-radius: 1vh;
+    padding-left: 2vh;
+}
+
+
+#nowTime{
+    position: absolute;
+    width: 10vh;
+    height: 5vh;
+    background-color: #322f3d;
+    font-size: 2vh;
+    left: 50%;
+    bottom: 3vh;
+    transform:translateX(-50%);
+    color: #87556f;
+    border-radius: 3vh;
+    visibility: hidden;
+    opacity: 0;
+    transition:all 1s;
+    cursor: pointer;
+}

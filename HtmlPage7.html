@@ -1,0 +1,50 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/all.css">
+    <link rel="stylesheet" href="StyleSheet4.css">
+</head>
+<body class="AllCenter">
+    <ul class="ClockBody AllCenter">
+        <li id="SecondCount">
+            <ul class="CountBody">
+                <li class="CountBasic"></li>
+                <li class="CountAdditional"></li>
+            </ul>
+        </li>
+        <li id="MinuteCount">
+            <ul class="CountBody">
+                <li class="CountBasic"></li>
+                <li class="CountAdditional"></li>
+            </ul>
+        </li>
+        <li id="HourCount">
+            <ul class="CountBody">
+                <li class="CountBasic"></li>
+                <li class="CountAdditional"></li>
+            </ul>
+        </li>
+
+        <li id="AmPm" class="AllCenter" onclick="/*ChengeAmPm()*/">AM</li>
+
+        <li class="CentralPoint"></li>
+        <li class="num1" id="num12Left"></li>
+        <li class="num1" id="num12Right"></li>
+        <li class="num1" id="num6"></li>
+        <li class="num1" id="num3"></li>
+        <li class="num1" id="num9"></li>
+    </ul>
+    <div class="SetTime">
+        <input id="SetHour" class="SeterTime" type="number" value="00" onchange="OrderTime()" />
+        <input id="SetMinute" class="SeterTime" type="number" value="00" onchange="OrderTime()" />
+        <input id="SetSecoond" class="SeterTime" type="number" value="00" onchange="OrderTime()" />
+    </div>
+    <button type="button" id="Themes" onclick="ChengeTheme()">Light</button>
+    <button id="nowTime" onclick="NOWTime()">NOW</button>
+</body>
+    <script src="fontawesome/all.js"></script>
+    <script src="javascript.js"></script>
+</html>
